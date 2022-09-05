@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }) {
       <div className="sakura-wrapper fixed h-screen w-full z-50 overflow-x-hidden pointer-events-none" />
       <Layout>
         <Component {...pageProps} />
+        <TabBar />
       </Layout>
-      <TabBar />
     </>
   );
 }

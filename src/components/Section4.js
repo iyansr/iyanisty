@@ -1,38 +1,17 @@
 import React from 'react';
 import Graphic1 from '~icons/Graphic1';
+import Shape1 from './Shape1';
 import Text from './Text';
-
-const Time = ({ count, unit }) => {
-  return (
-    <div className="text-center mt-10 text-[#b692ca]">
-      <p className="font-semibold text-2xl text-purple-900">{count}</p>
-      <p className="text-sm">{unit}</p>
-    </div>
-  );
-};
 
 const Section4 = () => {
   return (
     <section className="relative bg-purple-50 -mt-20 px-6">
       <div className="pt-24 bg-purple-50">
-        <h3 className="text-center font-semibold text-2xl text-purple-900">02 Oktober 2022</h3>
-
-        <div className="flex w-full justify-center mt-12">
-          <img src="/images/save-date.png" alt="Save The Date" className="h-28" />
-        </div>
-
-        <div className="flex items-center justify-center space-x-8">
-          <Time count={'05'} unit="Hari" />
-          <Time count={'01'} unit="Jam" />
-          <Time count={'05'} unit="Menit" />
-          <Time count={'50'} unit="Detik" />
-        </div>
-
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center">
           <Graphic1 />
         </div>
 
-        <div className="text-sm text-[#b692ca] text-center">
+        <div className="text-sm text-[#b692ca] text-center relative z-20">
           <p className="mt-8">
             Kehadiran serta doa restu Bapak/Ibu/Saudara/i merupakan suatu kebahagiaan dan kehormatan
             bagi kami.
@@ -40,7 +19,7 @@ const Section4 = () => {
           <p className="font-semibold text-purple-900 mt-2">{`Wassalamu'alaikum Warrahmatullahi Wabarrakatuh`}</p>
         </div>
 
-        <div className="text-center font-semibold text-[#b692ca] mt-16">
+        <div className="text-center font-semibold text-[#b692ca] mt-8">
           <p>Minggu</p>
           <div className="flex justify-center items-center space-x-2 mt-2">
             <p className="font-bold text-5xl">02</p>
@@ -66,6 +45,17 @@ const Section4 = () => {
           </div>
         </div>
       </div>
+
+      <Shape1
+        className="absolute top-[108px] right-[-105px] rotate-45 z-[0]"
+        height="300"
+        fill="#e8dbf1"
+      />
+      <Shape1
+        className="absolute bottom-[109px] left-[-105px] rotate-180 z-0"
+        height="300"
+        fill="#e8dbf1"
+      />
     </section>
   );
 };
