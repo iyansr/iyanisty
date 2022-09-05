@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section2 = () => {
   return (
-    <div
+    <section
       className="text-center text-[#4f2f56] relative z-10 p-6"
       style={{
         backgroundImage: `url(/images/bg1.png)`,
@@ -26,7 +26,7 @@ const Section2 = () => {
         tanda-tanda bagi kaum yang berfikir.
       </p>
       <p className="font-semibold text-sm mt-2"> = QS. Ar-Rum 21 = </p>
-    </div>
+    </section>
   );
 };
 

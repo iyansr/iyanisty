@@ -10,3 +10,7 @@
    font-family: "B Davat";
    src: url("/fonts/BDavat");
 }
+
+* {
+   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
