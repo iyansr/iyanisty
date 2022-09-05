@@ -1,9 +1,15 @@
 import React from 'react';
+import Shape1 from './Shape1';
 
 const Section3 = () => {
   return (
-    <>
-      <div className="text-center text-stone-700 relative overflow-visible z-10 py-14 pb-36 px-6 bg-[#cdb4db]">
+    <div className="relative">
+      <img
+        src="/images/flower.png"
+        alt=""
+        className="absolute left-0 top-[-12px] h-40 rotate-180 z-20"
+      />
+      <div className="text-center text-stone-700 overflow-hidden z-10 py-14 pb-36 px-6 bg-[#cdb4db] relative">
         <div className="mt-8">
           <h3
             className="text-3xl"
@@ -19,12 +25,6 @@ const Section3 = () => {
             pernikahan putra putri kami
           </p>
         </div>
-
-        <img
-          src="/images/flower.png"
-          alt=""
-          className="absolute left-0 top-[-12px] h-40 rotate-180"
-        />
 
         <div className="text-center mt-8">
           <img src="/images/iyan.png" alt="Iyan" className="h-40 mx-auto" />
@@ -50,6 +50,17 @@ const Section3 = () => {
         </div>
 
         <img src="/images/flower.png" alt="" className="absolute right-0 bottom-0 h-40 z-10" />
+
+        <Shape1
+          className="absolute top-[108px] right-[-105px] rotate-45 -z-10"
+          height="300"
+          fill="#B692CA"
+        />
+        <Shape1
+          className="absolute bottom-[109px] left-[-105px] rotate-180 -z-10"
+          height="300"
+          fill="#B692CA"
+        />
       </div>
 
       <div className="relative">
@@ -77,7 +88,7 @@ const Section3 = () => {
           />
         </svg>
       </div>
-    </>
+    </div>
   );
 };
 
