@@ -19,7 +19,7 @@ const Section4 = () => {
           <p className="font-semibold text-purple-900 mt-2">{`Wassalamu'alaikum Warrahmatullahi Wabarrakatuh`}</p>
         </div>
 
-        <div className="text-center font-semibold text-[#b692ca] mt-8">
+        <div className="text-center font-semibold text-[#b692ca] mt-8 relative z-10">
           <p>Minggu</p>
           <div className="flex justify-center items-center space-x-2 mt-2">
             <p className="font-bold text-5xl">02</p>
@@ -30,14 +30,14 @@ const Section4 = () => {
           </div>
         </div>
 
-        <div className="mt-8 text-center text-purple-900">
+        <div className="mt-8 text-center text-purple-900 relative z-10">
           <Text className="text-2xl ">Akad Nikah</Text>
           <div className="mt-4 text-lg">
             <p>09.00 - 11.00 WITA</p>
             <p>Hotel Azizah Syariah Kendari</p>
           </div>
         </div>
-        <div className="mt-8 text-center text-purple-900">
+        <div className="mt-8 text-center text-purple-900 relative z-10">
           <Text className="text-2xl ">Resepsi</Text>
           <div className="mt-4 text-lg">
             <p>19.30 WITA - Selesai</p>

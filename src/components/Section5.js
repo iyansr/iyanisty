@@ -50,7 +50,7 @@ const Section5 = () => {
 
       <h3 className="text-center font-semibold text-2xl text-purple-900 mt-16">02 Oktober 2022</h3>
 
-      <div className="flex w-full justify-center mt-12">
+      <div className="flex w-full justify-center mt-12 relative z-10">
         <img src="/images/save-date.png" alt="Save The Date" className="h-28" />
       </div>
 
@@ -78,7 +78,7 @@ const Section5 = () => {
         fill="#e8dbf1"
       />
       <Shape1
-        className="absolute bottom-[109px] left-[-105px] rotate-180 z-0"
+        className="absolute bottom-[109px] left-[-105px] rotate-180 z-[0]"
         height="300"
         fill="#e8dbf1"
       />
