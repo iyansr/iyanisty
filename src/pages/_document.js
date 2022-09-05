@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <Script id="sakura-script" src="/script/sakura.js" strategy="afterInteractive" />
+        <script id="sakura-script" src="/script/sakura.js" defer />
         <Script
           id="sakura-start"
           strategy="lazyOnload"
