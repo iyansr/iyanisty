@@ -1,5 +1,37 @@
 import React from 'react';
+import FacebookIcon from '~icons/FacebookIcon';
+import InstagramIcon from '~icons/InstagramIcon';
+import YoutubeIcon from '~icons/YoutubeIcon';
 import Shape1 from './Shape1';
+
+const linkIyan = [
+  {
+    url: 'https://www.facebook.com/iyan.scout',
+    icon: <FacebookIcon height="18" />,
+  },
+  {
+    url: 'https://www.instagram.com/iyan_saputraaa',
+    icon: <InstagramIcon height="18" />,
+  },
+  {
+    url: 'https://www.youtube.com/channel/UCNfB5ywqn0g9QZbdClrBvjQ',
+    icon: <YoutubeIcon height="18" />,
+  },
+];
+const linkIsty = [
+  {
+    url: 'https://www.facebook.com/isty.christyii',
+    icon: <FacebookIcon height="18" />,
+  },
+  {
+    url: 'https://www.instagram.com/istyanah',
+    icon: <InstagramIcon height="18" />,
+  },
+  {
+    url: 'https://www.youtube.com/channel/UCvPA04F47HKAXhS83hbwjQw',
+    icon: <YoutubeIcon height="18" />,
+  },
+];
 
 const Section3 = () => {
   return (
@@ -7,9 +39,9 @@ const Section3 = () => {
       <img
         src="/images/flower.png"
         alt=""
-        className="absolute left-0 top-[-12px] h-40 rotate-180 z-20"
+        className="absolute left-0 top-[-12px] h-40 rotate-180 z-[2]"
       />
-      <div className="text-center text-stone-700 overflow-hidden z-10 py-14 pb-36 px-6 bg-[#cdb4db] relative">
+      <div className="text-center text-stone-700 overflow-hidden z-[1] py-14 pb-36 px-6 bg-[#cdb4db] relative">
         <div className="mt-8">
           <h3
             className="text-3xl"
@@ -26,27 +58,44 @@ const Section3 = () => {
           </p>
         </div>
 
-        <div className="text-center mt-8">
-          <img src="/images/iyan.png" alt="Iyan" className="h-40 mx-auto" />
-          <p className="font-bold">Iyan Saputra</p>
-          <p>Anak pertama dari Bapak I Made Rai Adnyana</p>
-          <p>dan Ibu Sri Mariati</p>
-        </div>
+        <div className="relative z-20">
+          <div className="text-center mt-8">
+            <img src="/images/iyan.png" alt="Iyan" className="h-40 mx-auto" />
+            <p className="font-bold text-gray-900 mt-2">Iyan Saputra</p>
+            <p className="text-sm">Anak pertama dari Bapak I Made Rai Adnyana</p>
+            <p className="text-sm">dan Ibu Sri Mariati</p>
 
-        <p
-          style={{
-            fontFamily: 'Hendycroft Signature',
-          }}
-          className="text-5xl my-8"
-        >
-          {'&'}
-        </p>
+            <div className="flex items-center justify-center space-x-4 mt-4">
+              {linkIyan.map((link, index) => (
+                <a key={String(index)} href={link.url} target="_blank" rel="noopener noreferrer">
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
 
-        <div className="text-center">
-          <img src="/images/isty.png" alt="Isty" className="h-40 mx-auto" />
-          <p className="font-bold">Istianah Baharuddin, S.Ap</p>
-          <p>Anak Ketiga dari Bapak Baharuddin Kasim, SE</p>
-          <p>dan Ibu Dra. Nurlela</p>
+          <p
+            style={{
+              fontFamily: 'Hendycroft Signature',
+            }}
+            className="text-5xl my-8"
+          >
+            {'&'}
+          </p>
+
+          <div className="text-center">
+            <img src="/images/isty.png" alt="Isty" className="h-40 mx-auto" />
+            <p className="font-bold text-gray-900 mt-2">Istianah Baharuddin, S.Ap</p>
+            <p className="text-sm">Anak Ketiga dari Bapak Baharuddin Kasim, SE</p>
+            <p className="text-sm">dan Ibu Dra. Nurlela</p>
+            <div className="flex items-center justify-center space-x-4 mt-4">
+              {linkIsty.map((link, index) => (
+                <a key={String(index)} href={link.url} target="_blank" rel="noopener noreferrer">
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         <img src="/images/flower.png" alt="" className="absolute right-0 bottom-0 h-40 z-10" />

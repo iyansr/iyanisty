@@ -6,7 +6,7 @@ import '../styles/sakura.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="sakura-wrapper fixed h-screen w-screen z-50" />
+      <div className="sakura-wrapper fixed h-screen w-full z-[2] overflow-x-hidden pointer-events-none" />
       <Layout>
         <Component {...pageProps} />
       </Layout>
