@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: "Hendycroft Signature";
+   src: url("/fonts/Hendycroft Signature.woff");
+}
+@font-face {
+   font-family: "B Davat";
+   src: url("/fonts/BDavat");
+}
