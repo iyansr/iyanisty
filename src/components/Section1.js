@@ -18,7 +18,11 @@ const Section1 = () => {
             <p className="text-right text-xs">02.10.2022</p>
           </div>
         </div>
-        <img src="/images/cover/1.jpg" alt="" className="opacity-70 min-h-screen object-cover" />
+        <img
+          src="/images/cover/1.jpg"
+          alt="Cover"
+          className="opacity-70 min-h-screen object-cover"
+        />
       </div>
     </div>
   );

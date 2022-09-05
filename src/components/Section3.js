@@ -39,7 +39,7 @@ const Section3 = () => {
           }}
           className="text-5xl my-8"
         >
-          &
+          {'&'}
         </p>
 
         <div className="text-center">
