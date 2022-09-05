@@ -5,8 +5,9 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <Script src="/script/sakura.js" strategy="afterInteractive" />
+        <Script id="sakura-script" src="/script/sakura.js" strategy="afterInteractive" />
         <Script
+          id="sakura-start"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `

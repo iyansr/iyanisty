@@ -13,7 +13,7 @@ const Section3 = () => {
           >
             Pengantin
           </h3>
-          <p className="font-semibold mt-8">Assalamu'alaikum Warrahmatullahi Wabarrakatuh</p>
+          <p className="font-semibold mt-8">{`Assalamu'alaikum Warrahmatullahi Wabarrakatuh`}</p>
           <p className="mt-2 text-sm">
             Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud menyelenggarakan akad
             pernikahan putra putri kami
