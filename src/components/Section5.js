@@ -12,6 +12,7 @@ const Time = ({ count, unit }) => {
 
 const Section5 = () => {
   const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.0113044317045!2d122.49719391504892!3d-4.018079345839869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d988da8a59f30f1%3A0xde807c63851e67fb!2sHotel%20Azizah!5e0!3m2!1sen!2sid!4v1662400198504!5m2!1sen!2sid`;
+  const mapSrcRedirect = `https://maps.google.com/maps?ll=-4.018085,122.499383&z=16&t=m&hl=en&gl=ID&mapclient=embed&cid=16032951440315934715`;
   const calendarSrc = `https://calendar.google.com/event?action=TEMPLATE&tmeid=MHYxazNhaHRsMGI1MzNlZWRkZDJvb2YyZWIgaWtoeWFuN0Bt&tmsrc=ikhyan7%40gmail.com`;
   return (
     <section className="bg-purple-50 px-6 text-purple-900 relative overflow-hidden">
@@ -40,7 +41,7 @@ const Section5 = () => {
 
         <button
           onClick={() => {
-            window?.open(mapSrc, '_blank');
+            window?.open(mapSrcRedirect, '_blank');
           }}
           className="bg-[#b692ca] text-sm rounded-full px-4 py-2 text-white mx-auto mt-4 hover:scale-95 animate-pulse duration-100"
         >
