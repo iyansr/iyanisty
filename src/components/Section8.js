@@ -3,23 +3,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import Shape1 from './Shape1';
 import Text from './Text';
-
-const Card = ({ description, title, year, image }) => {
-  return (
-    <div className="bg-purple-50 rounded-md shadow-md overflow-hidden p-2 min-h-[335px]">
-      <div className="flex items-center justify-center space-x-2 py-2">
-        <Text>{title}</Text>
-        <span>|</span>
-        <span className="text-sm font-medium">{year}</span>
-      </div>
-      <Image src={image} className="object-cover aspect-video" width={640} height={480} />
-
-      <div className="mt-4">
-        <p className="text-xs">{description}</p>
-      </div>
-    </div>
-  );
-};
+import Lightbox from 'yet-another-react-lightbox';
 
 const images = [
   {
@@ -91,16 +75,19 @@ const potraits = images.filter((f) => f.url.replace('.jpg', '').includes('p'));
 const landscape = images.filter((f) => !f.url.replace('.jpg', '').includes('p'));
 
 const Section8 = () => {
+  const [index1, setIndex1] = React.useState(-1);
+  const [index2, setIndex2] = React.useState(-1);
   return (
     <section className="bg-[#cdb4db] px-6 mt-8 py-8 text-purple-900 relative overflow-hidden z-20">
       <div className="text-center">
         <Text className="text-2xl ">Gallery</Text>
       </div>
       <div className="text-center mt-10 relative z-10 -mx-6">
-        <Carousel slidesToScroll={2} slidesToShow={2.4} autoplay>
+        <Carousel slidesToScroll={2} slidesToShow={2} autoplay infinite={true}>
           {landscape.map((s, i) => (
             <div key={String(i)} className="flex items-center h-full">
               <Image
+                onClick={() => setIndex1(i)}
                 src={s.url}
                 className="object-cover h-full aspect-video"
                 width={426}
@@ -112,10 +99,11 @@ const Section8 = () => {
         </Carousel>
       </div>
       <div className="text-center -mt-2  relative z-10 -mx-6">
-        <Carousel slidesToScroll={3} slidesToShow={3.4} autoplay>
+        <Carousel slidesToScroll={3} slidesToShow={3} autoplay infinite={true}>
           {potraits.map((s, i) => (
             <div key={String(i)} className="flex items-center h-full">
               <Image
+                onClick={() => setIndex2(i)}
                 src={s.url}
                 className="object-cover h-full aspect-[9/16]"
                 height={426}
@@ -126,6 +114,19 @@ const Section8 = () => {
           ))}
         </Carousel>
       </div>
+
+      <Lightbox
+        open={index1 >= 0}
+        index={index1}
+        close={() => setIndex1(-1)}
+        slides={landscape.map((p) => ({ src: p.url }))}
+      />
+      <Lightbox
+        open={index2 >= 0}
+        index={index2}
+        close={() => setIndex2(-1)}
+        slides={potraits.map((p) => ({ src: p.url }))}
+      />
 
       <Shape1
         className="absolute top-[1px] right-[-105px] rotate-45 z-[0]"

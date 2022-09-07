@@ -1,7 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-const Carousel = ({ children, slidesToShow = 1.4, slidesToScroll = 1, autoplay = false }) => {
+const Carousel = ({
+  children,
+  slidesToShow = 1.4,
+  slidesToScroll = 1,
+  autoplay = false,
+  ...props
+}) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -16,7 +22,7 @@ const Carousel = ({ children, slidesToShow = 1.4, slidesToScroll = 1, autoplay =
 
   return (
     <div className="relative overflow-hidden md:overflow-visible h-full">
-      <Slider {...settings}>{children}</Slider>
+      <Slider {...{ ...settings, ...props }}>{children}</Slider>
     </div>
   );
 };
