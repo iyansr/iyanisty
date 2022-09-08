@@ -61,9 +61,6 @@ const images = [
     url: '/images/gallery/11.jpg',
   },
   {
-    url: '/images/gallery/11.jpg',
-  },
-  {
     url: '/images/gallery/12.jpg',
   },
   {
