@@ -143,7 +143,7 @@ const Section10 = () => {
         <Text className="text-2xl ">Ucapan Terbaru</Text>
       </div>
 
-      <div className="px-4 bg-[#cdb4db] mt-6 rounded-lg max-h-96 overflow-y-scroll relative z-10 scrollbar-none">
+      <div className="px-4 bg-[#cdb4db] mt-6 rounded-lg max-h-[400px] overflow-y-scroll relative z-10 scrollbar-none">
         {messageList.map((msg, index) => (
           <div className="bg-white p-4 rounded-lg my-4" key={String(index)}>
             <div className="flex space-x-2">
