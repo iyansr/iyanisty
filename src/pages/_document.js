@@ -25,7 +25,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <div id="modal-portal" />
+        <div id="modal-portal" className="overflow-hidden" />
       </body>
     </Html>
   );

@@ -91,10 +91,10 @@ export default function Welcome({}) {
                   },
                 }}
               >
-                <div className="absolute z-40 inset-0 bg-p overflow-hidden h-screen">
-                  <div className="relative h-screen w-screen">
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 z-50">
-                      <div className="text-center text-white flex flex-col h-full justify-between py-32">
+                <div className="sticky z-40 inset-0 bg-p overflow-hidden h-screen">
+                  <div className="relative h-screen w-screen overflow-hidden">
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 z-50 overflow-hidden">
+                      <div className="text-center text-white flex flex-col h-full justify-between py-32 overflow-hidden">
                         <div>
                           <h1
                             className="font-bold text-4xl text-white"
@@ -125,7 +125,7 @@ export default function Welcome({}) {
 
                     <Carousel slidesToScroll={1} slidesToShow={1} autoplay infinite={true}>
                       {images.map((s, i) => (
-                        <div key={String(i)} className="flex items-center h-screen">
+                        <div key={String(i)} className="flex items-center h-screen overflow-hidden">
                           <Image
                             onClick={() => setIndex2(i)}
                             src={s.url}
