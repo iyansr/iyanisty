@@ -5,6 +5,7 @@ import '../styles/sakura.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import 'yet-another-react-lightbox/styles.css';
+import Welcome from '~components/Welcome';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
         <TabBar />
+        <Welcome />
       </Layout>
     </>
   );

@@ -19,7 +19,7 @@ const Section1 = () => {
           </div>
         </div>
         <img
-          src="/images/cover/1.jpg"
+          src="/images/cover/3.jpg"
           alt="Cover"
           className="opacity-70 min-h-screen object-cover"
         />
