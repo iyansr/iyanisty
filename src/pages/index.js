@@ -8,8 +8,10 @@ import Section6 from '~components/Section6';
 import Section7 from '~components/Section7';
 import Section8 from '~components/Section8';
 import Section9 from '~components/Section9';
+import Thanks from '~components/Thanks';
 import FlowerLeft from '~icons/FlowerLeft';
 import FlowerRight from '~icons/FlowerRight';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 export default function Home() {
   return (
@@ -19,15 +21,36 @@ export default function Home() {
         <FlowerRight />
       </div>
       <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
-      <Section10 />
+      <LazyLoadComponent>
+        <Section2 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section3 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section4 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section5 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section6 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section7 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section8 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section9 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section10 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Thanks />
+      </LazyLoadComponent>
     </div>
   );
 }

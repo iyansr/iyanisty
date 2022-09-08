@@ -49,13 +49,17 @@ const Section5 = () => {
         </button>
       </div>
 
-      <h3 className="text-center font-semibold text-2xl text-purple-900 mt-16">02 Oktober 2022</h3>
+      <div className="relative z-10">
+        <h3 className="text-center font-semibold text-2xl text-purple-900 mt-16">
+          02 Oktober 2022
+        </h3>
+      </div>
 
-      <div className="flex w-full justify-center mt-12 relative z-10">
+      <div className="flex w-full justify-center mt-6 relative z-10">
         <img src="/images/save-date.png" alt="Save The Date" className="h-28" />
       </div>
 
-      <div className="flex items-center justify-center space-x-8">
+      <div className="flex items-center justify-center space-x-8 -mt-4">
         <Time count={'05'} unit="Hari" />
         <Time count={'01'} unit="Jam" />
         <Time count={'05'} unit="Menit" />
