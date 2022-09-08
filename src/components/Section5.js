@@ -15,7 +15,7 @@ const Section5 = () => {
   const mapSrcRedirect = `https://maps.google.com/maps?ll=-4.018085,122.499383&z=16&t=m&hl=en&gl=ID&mapclient=embed&cid=16032951440315934715`;
   const calendarSrc = `https://calendar.google.com/event?action=TEMPLATE&tmeid=MHYxazNhaHRsMGI1MzNlZWRkZDJvb2YyZWIgaWtoeWFuN0Bt&tmsrc=ikhyan7%40gmail.com`;
   return (
-    <section className="bg-purple-50 px-6 text-purple-900 relative overflow-hidden">
+    <section className="bg-purple-50 px-6 text-purple-900 relative overflow-hidden" id="peta">
       <div className="text-center mt-16">
         <p className="text-sm font-semibold">Hotel Azizah Syariah</p>
         <p className="text-sm mt-2">

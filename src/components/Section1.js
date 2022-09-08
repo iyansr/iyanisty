@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section1 = () => {
   return (
-    <section className="relative min-h-screen">
+    <section className="relative min-h-screen" id="utama">
       <div className="bg-stone-700 overflow-hidden">
         <div className="absolute z-10 top-0 left-0 bottom-0 right-0 flex justify-center ">
           <div className="pt-12 text-stone-700">

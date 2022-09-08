@@ -55,7 +55,10 @@ const Section10 = () => {
   }, [success]);
 
   return (
-    <section className="bg-purple-50 px-6 py-8 text-purple-900 relative overflow-hidden z-20 ">
+    <section
+      className="bg-purple-50 px-6 py-8 text-purple-900 relative overflow-hidden z-20 "
+      id="ucapan"
+    >
       <div className="text-center">
         <Text className="text-2xl ">Kartu Ucapan</Text>
       </div>

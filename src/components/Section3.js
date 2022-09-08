@@ -35,7 +35,7 @@ const linkIsty = [
 
 const Section3 = () => {
   return (
-    <section className="relative z-10">
+    <section className="relative z-10" id="pengantin">
       <img
         src="/images/flower.png"
         alt=""

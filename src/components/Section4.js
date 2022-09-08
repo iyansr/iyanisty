@@ -5,7 +5,7 @@ import Text from './Text';
 
 const Section4 = () => {
   return (
-    <section className="relative bg-purple-50 -mt-20 px-6 overflow-hidden">
+    <section className="relative bg-purple-50 -mt-20 px-6 overflow-hidden" id="event">
       <div className="pt-24 bg-purple-50">
         <div className="flex justify-center">
           <Graphic1 />
