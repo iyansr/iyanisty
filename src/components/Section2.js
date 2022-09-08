@@ -6,8 +6,8 @@ const Section2 = () => {
       className="text-center text-[#4f2f56] relative z-10 p-6"
       style={{
         backgroundImage: `url(/images/bg1.png)`,
-        backgroundSize: '120%',
-        backgroundRepeat: 'round',
+        backgroundSize: '220%',
+        // backgroundRepeat: 'round',
         backgroundClip: 'border-box',
         backgroundClip: 'border-box',
         backgroundColor: '#a180ad',

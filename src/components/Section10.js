@@ -36,6 +36,9 @@ const Section10 = () => {
       await fetchMessage();
       setSuccess(true);
       setSubmitting(false);
+      setName('');
+      setMessage('');
+      setIsAttended(null);
     }
   };
 
@@ -67,7 +70,7 @@ const Section10 = () => {
                 type="text"
                 name="name"
                 id="name"
-                className="rounded md appearance-none border border-[#e8dbf1] mt-2"
+                className="text-xs rounded md appearance-none border border-[#e8dbf1] mt-2"
               />
             </div>
             <div className="flex flex-col text-left text-xs mt-4">
@@ -77,7 +80,7 @@ const Section10 = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 name="message"
                 id="message"
-                className="rounded md appearance-none border border-[#e8dbf1] mt-2"
+                className="rounded text-xs md appearance-none border border-[#e8dbf1] mt-2"
               />
             </div>
 
@@ -131,6 +134,38 @@ const Section10 = () => {
             )}
           </form>
         </div>
+      </div>
+
+      <div className="text-center mt-12 relative z-10 scroll-">
+        <Text className="text-2xl ">Ucapan Terbaru</Text>
+      </div>
+
+      <div className="px-4 bg-[#cdb4db] mt-6 rounded-lg max-h-96 overflow-y-scroll relative z-10 scrollbar-none">
+        {messageList.map((msg, index) => (
+          <div className="bg-white p-4 rounded-lg my-4" key={String(index)}>
+            <div className="flex space-x-2">
+              <div className="h-10 w-10 rounded-full bg-[#e8dbf1] flex items-center justify-center">
+                <Text className="text-xs font-bold">{msg.name?.charAt(0)?.toUpperCase()}</Text>
+              </div>
+
+              <div className="flex-1 text-xs text-black">
+                <div className="flex items-center justify-between">
+                  <h4 className="font-semibold mb-2 flex-1">{msg.name}</h4>
+                  {msg.is_attend ? (
+                    <div className="text-xs px-2 py-1 bg-green-200 rounded-full">
+                      <span>Hadir</span>
+                    </div>
+                  ) : (
+                    <div className="text-xs px-2 py-1 bg-red-200 rounded-full">
+                      <span>Tidak Hadir</span>
+                    </div>
+                  )}
+                </div>
+                <p>{msg.message}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <Shape1

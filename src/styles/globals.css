@@ -14,3 +14,12 @@
 * {
    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.scrollbar-none {
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+   display: none;
+}
