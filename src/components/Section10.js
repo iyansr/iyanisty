@@ -38,7 +38,6 @@ const Section10 = () => {
       setSubmitting(false);
       setName('');
       setMessage('');
-      setIsAttended(null);
     }
   };
 
@@ -59,10 +58,10 @@ const Section10 = () => {
       className="bg-purple-50 px-6 py-8 text-purple-900 relative overflow-hidden z-20 "
       id="ucapan"
     >
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-down">
         <Text className="text-2xl ">Kartu Ucapan</Text>
       </div>
-      <div className="text-center mt-8 relative z-10">
+      <div className="text-center mt-8 relative z-10" data-aos="fade-up">
         <div className="bg-white rounded-lg p-4">
           <form onSubmit={onSubmit}>
             <div className="flex flex-col text-left text-xs">
@@ -139,11 +138,14 @@ const Section10 = () => {
         </div>
       </div>
 
-      <div className="text-center mt-12 relative z-10 scroll-">
+      <div className="text-center mt-12 relative z-10 " data-aos="fade-down">
         <Text className="text-2xl ">Ucapan Terbaru</Text>
       </div>
 
-      <div className="px-4 bg-[#cdb4db] mt-6 rounded-lg max-h-[400px] overflow-y-scroll relative z-10 scrollbar-none">
+      <div
+        className="px-4 bg-[#cdb4db] mt-6 rounded-lg max-h-[400px] overflow-y-scroll relative z-10 scrollbar-none"
+        data-aos="fade-up"
+      >
         {messageList.map((msg, index) => (
           <div className="bg-white p-4 rounded-lg my-4" key={String(index)}>
             <div className="flex space-x-2">

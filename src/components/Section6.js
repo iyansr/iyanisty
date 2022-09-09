@@ -48,10 +48,10 @@ const story = [
 const Section6 = () => {
   return (
     <section className="bg-[#cdb4db] px-6 mt-8 py-8 text-purple-900 relative overflow-hidden z-20">
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-down">
         <Text className="text-2xl ">Our Story</Text>
       </div>
-      <div className="text-center mt-8 relative z-10 -mx-6">
+      <div className="text-center mt-8 relative z-10 -mx-6" data-aos="fade-up">
         <Carousel>
           {story.map((s, i) => (
             <div key={String(i)} className={'pl-4 py-1 ' + (i === story.length - 1 ? 'pr-4' : '')}>

@@ -42,7 +42,7 @@ const Section3 = () => {
         className="absolute left-0 top-[-12px] h-40 rotate-180 z-[2]"
       />
       <div className="text-center text-fuchsia-900 overflow-hidden z-[1] py-14 pb-36 px-6 bg-[#cdb4db] relative">
-        <div className="mt-8">
+        <div className="mt-8" data-aos="zoom-in-up">
           <h3
             className="text-3xl"
             style={{
@@ -59,7 +59,7 @@ const Section3 = () => {
         </div>
 
         <div className="relative z-20">
-          <div className="text-center mt-8">
+          <div className="text-center mt-8" data-aos="fade-right">
             <img src="/images/iyan.png" alt="Iyan" className="h-40 mx-auto" />
             <p className="font-bold mt-2">Iyan Saputra</p>
             <p className="text-sm">Anak pertama dari Bapak I Made Rai Adnyana</p>
@@ -75,6 +75,7 @@ const Section3 = () => {
           </div>
 
           <p
+            data-aos="zoom-in"
             style={{
               fontFamily: 'Hendycroft Signature',
             }}
@@ -83,7 +84,7 @@ const Section3 = () => {
             {'&'}
           </p>
 
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-left">
             <img src="/images/isty.png" alt="Isty" className="h-40 mx-auto" />
             <p className="font-bold mt-2">Istianah Baharuddin, S.Ap</p>
             <p className="text-sm">Anak Ketiga dari Bapak Baharuddin Kasim, SE</p>

@@ -76,10 +76,10 @@ const Section8 = () => {
   const [index2, setIndex2] = React.useState(-1);
   return (
     <section className="bg-[#cdb4db] px-6 mt-8 py-8 text-purple-900 relative overflow-hidden z-20">
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-down">
         <Text className="text-2xl ">Gallery</Text>
       </div>
-      <div className="text-center mt-10 relative z-10 -mx-6">
+      <div className="text-center mt-10 relative z-10 -mx-6" data-aos="fade-right">
         <Carousel slidesToScroll={2} slidesToShow={2} autoplay infinite={true}>
           {landscape.map((s, i) => (
             <div key={String(i)} className="flex items-center h-full">
@@ -95,7 +95,7 @@ const Section8 = () => {
           ))}
         </Carousel>
       </div>
-      <div className="text-center -mt-2  relative z-10 -mx-6">
+      <div className="text-center -mt-2  relative z-10 -mx-6" data-aos="fade-left">
         <Carousel slidesToScroll={3} slidesToShow={3} autoplay infinite={true}>
           {potraits.map((s, i) => (
             <div key={String(i)} className="flex items-center h-full">

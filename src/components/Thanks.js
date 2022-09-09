@@ -2,7 +2,10 @@ import React from 'react';
 
 const Thanks = () => {
   return (
-    <section className="bg-purple-50 px-6 py-8 text-purple-900 relative overflow-hidden z-20">
+    <section
+      className="bg-purple-50 px-6 py-8 text-purple-900 relative overflow-hidden z-20"
+      data-aos="fade-down"
+    >
       <div className="flex w-full justify-center mt-6 relative z-10 py-16">
         <img src="/images/thanks.png" alt="Save The Date" className="h-28 object-cover" />
       </div>

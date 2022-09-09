@@ -1,11 +1,12 @@
 import Layout from '~components/Layout';
 import TabBar from '~components/TabBar';
+import Welcome from '~components/Welcome';
 import '../styles/globals.css';
 import '../styles/sakura.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import 'yet-another-react-lightbox/styles.css';
-import Welcome from '~components/Welcome';
+import 'aos/dist/aos.css';
 
 function MyApp({ Component, pageProps }) {
   return (

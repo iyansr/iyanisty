@@ -16,7 +16,7 @@ const Section5 = () => {
   const calendarSrc = `https://calendar.google.com/event?action=TEMPLATE&tmeid=MHYxazNhaHRsMGI1MzNlZWRkZDJvb2YyZWIgaWtoeWFuN0Bt&tmsrc=ikhyan7%40gmail.com`;
   return (
     <section className="bg-purple-50 px-6 text-purple-900 relative overflow-hidden" id="peta">
-      <div className="text-center mt-16">
+      <div className="text-center mt-16" data-aos="fade-right">
         <p className="text-sm font-semibold">Hotel Azizah Syariah</p>
         <p className="text-sm mt-2">
           Depan RS. Hermina, Jl. DI Panjaitan No.100, Wundudopi, Kec. Baruga, Kota Kendari, Sulawesi
@@ -24,7 +24,7 @@ const Section5 = () => {
         </p>
       </div>
 
-      <div className="px-12 mt-4 flex flex-col justify-center relative z-10">
+      <div className="px-12 mt-4 flex flex-col justify-center relative z-10" data-aos="fade-down">
         <div className="border-2 border-[#b692ca] h-64 rounded-xl flex items-center justify-center text-sm overflow-hidden p-3">
           <div className="rounded-xl w-full h-full">
             <iframe
@@ -40,6 +40,7 @@ const Section5 = () => {
         </div>
 
         <button
+          data-aos="fade-left"
           onClick={() => {
             window?.open(mapSrcRedirect, '_blank');
           }}
@@ -49,24 +50,24 @@ const Section5 = () => {
         </button>
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10" data-aos="fade-down">
         <h3 className="text-center font-semibold text-2xl text-purple-900 mt-16">
           02 Oktober 2022
         </h3>
       </div>
 
-      <div className="flex w-full justify-center mt-6 relative z-10">
+      <div className="flex w-full justify-center mt-6 relative z-10" data-aos="zoom-in">
         <img src="/images/save-date.png" alt="Save The Date" className="h-28" />
       </div>
 
-      <div className="flex items-center justify-center space-x-8 -mt-4">
+      <div className="flex items-center justify-center space-x-8 -mt-4" data-aos="fade-up">
         <Time count={'05'} unit="Hari" />
         <Time count={'01'} unit="Jam" />
         <Time count={'05'} unit="Menit" />
         <Time count={'50'} unit="Detik" />
       </div>
 
-      <div className="px-12 mt-4 flex flex-col justify-center relative z-10">
+      <div className="px-12 mt-4 flex flex-col justify-center relative z-10" data-aos="fade-up">
         <button
           onClick={() => {
             window?.open(calendarSrc, '_blank');

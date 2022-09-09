@@ -5,12 +5,15 @@ import Text from './Text';
 const Section7 = () => {
   return (
     <section className="bg-purple-50 px-6 py-8 text-purple-900 relative overflow-hidden z-20 ">
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-down">
         <Text className="text-2xl ">Amplop Digital</Text>
       </div>
       <div className="text-center mt-8 relative z-10">
         <div className="flex items-center space-x-2">
-          <div className="rounded-lg bg-[#cdb4db] p-4 text-sm flex-1 flex flex-col justify-between min-h-[250px]">
+          <div
+            data-aos="fade-right"
+            className="rounded-lg bg-[#cdb4db] p-4 text-sm flex-1 flex flex-col justify-between min-h-[250px]"
+          >
             <div className="border-b-2 border-b-purple-800 pb-4 text-center">
               <img
                 src="/images/mandiri.png"
@@ -37,7 +40,10 @@ const Section7 = () => {
             </div>
           </div>
 
-          <div className="rounded-lg bg-[#cdb4db] p-4 text-sm flex-1 flex flex-col justify-between min-h-[250px]">
+          <div
+            data-aos="fade-left"
+            className="rounded-lg bg-[#cdb4db] p-4 text-sm flex-1 flex flex-col justify-between min-h-[250px]"
+          >
             <div className="border-b-2 border-b-purple-800 pb-4 text-center">
               <img
                 src="/images/gopay.png"
