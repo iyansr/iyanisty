@@ -39,7 +39,7 @@ const Section3 = () => {
       <img
         src="/images/flower.png"
         alt=""
-        className="absolute left-0 top-[-12px] h-40 rotate-180 z-[2]"
+        className="absolute left-0 top-0 h-40 rotate-180 z-[2]"
       />
       <div className="text-center text-fuchsia-900 overflow-hidden z-[1] py-14 pb-36 px-6 bg-[#cdb4db] relative">
         <div className="mt-8" data-aos="zoom-in-up">
