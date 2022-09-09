@@ -1,4 +1,5 @@
 import React from 'react';
+import useInterval from '~hooks/useInterval';
 import Shape1 from './Shape1';
 
 const Time = ({ count, unit }) => {
@@ -11,6 +12,8 @@ const Time = ({ count, unit }) => {
 };
 
 const Section5 = () => {
+  const { dd, hh, mm, ss, isTimeOut } = useInterval('2022-10-02 19:00:00');
+
   const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.0113044317045!2d122.49719391504892!3d-4.018079345839869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d988da8a59f30f1%3A0xde807c63851e67fb!2sHotel%20Azizah!5e0!3m2!1sen!2sid!4v1662400198504!5m2!1sen!2sid`;
   const mapSrcRedirect = `https://maps.google.com/maps?ll=-4.018085,122.499383&z=16&t=m&hl=en&gl=ID&mapclient=embed&cid=16032951440315934715`;
   const calendarSrc = `https://calendar.google.com/event?action=TEMPLATE&tmeid=MHYxazNhaHRsMGI1MzNlZWRkZDJvb2YyZWIgaWtoeWFuN0Bt&tmsrc=ikhyan7%40gmail.com`;
@@ -60,12 +63,21 @@ const Section5 = () => {
         <img src="/images/save-date.png" alt="Save The Date" className="h-28" />
       </div>
 
-      <div className="flex items-center justify-center space-x-8 -mt-4" data-aos="fade-up">
-        <Time count={'05'} unit="Hari" />
-        <Time count={'01'} unit="Jam" />
-        <Time count={'05'} unit="Menit" />
-        <Time count={'50'} unit="Detik" />
-      </div>
+      {isTimeOut ? (
+        <div className="flex items-center justify-center space-x-8 -mt-4" data-aos="fade-up">
+          <Time count={'00'} unit="Hari" />
+          <Time count={'00'} unit="Jam" />
+          <Time count={'00'} unit="Menit" />
+          <Time count={'00'} unit="Detik" />
+        </div>
+      ) : (
+        <div className="flex items-center justify-center space-x-8 -mt-4" data-aos="fade-up">
+          <Time count={dd} unit="Hari" />
+          <Time count={hh} unit="Jam" />
+          <Time count={mm} unit="Menit" />
+          <Time count={ss} unit="Detik" />
+        </div>
+      )}
 
       <div className="px-12 mt-4 flex flex-col justify-center relative z-10" data-aos="fade-up">
         <button

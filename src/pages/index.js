@@ -52,11 +52,10 @@ export default function Home() {
       </LazyLoadComponent>
 
       <LazyLoadComponent>
-        <Section9 />
-      </LazyLoadComponent>
-
-      <LazyLoadComponent>
         <Section10 />
+      </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Section9 />
       </LazyLoadComponent>
 
       <LazyLoadComponent>

@@ -5,6 +5,7 @@ import Carousel from './Carousel';
 import Image from 'next/future/image';
 import Text from './Text';
 import { EnvelopeOpenIcon } from '@heroicons/react/24/solid';
+import { useRouter } from 'next/router';
 
 const OVERLAY_STYLES = {
   position: 'fixed',
@@ -32,6 +33,9 @@ const images = [
 export default function Welcome({}) {
   const [isBrowser, setIsBrowser] = useState(false);
   const [open, setOpen] = useState(true);
+  const router = useRouter();
+
+  console.log(router.query);
 
   useEffect(() => {
     setIsBrowser(true);
@@ -110,7 +114,7 @@ export default function Welcome({}) {
 
                         <div>
                           <span className="text-sm">Kepada:</span>{' '}
-                          <Text className="text-2xl">Nama Undangan</Text>
+                          <Text className="text-2xl">{router?.query?.nama || 'Tamu Undangan'}</Text>
                         </div>
 
                         <button
