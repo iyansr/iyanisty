@@ -34,13 +34,12 @@ const Card = ({ image, videoId }) => {
       >
         <div className="flex items-center justify-center h-full w-full">
           <iframe
-            onRea
             id={videoId}
             type="text/html"
             width="640"
             height="360"
             src={`https://www.youtube.com/embed/${videoId}?autoplay=1&start=1&fs=1`}
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
         </div>
       </Modal>
