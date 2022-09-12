@@ -114,19 +114,23 @@ export default function Welcome({}) {
 
                         <div>
                           <span className="text-sm">Kepada:</span>{' '}
-                          <Text className="text-2xl">{router?.query?.nama || 'Tamu Undangan'}</Text>
+                          <Text className="text-2xl px-6">
+                            {router?.query?.nama || 'Tamu Undangan Tamu Undangan Tamu Undangan'}
+                          </Text>
                         </div>
 
-                        <button
-                          onClick={() => {
-                            setOpen(false);
-                            togglePlay();
-                          }}
-                          className="rounded-full px-4 py-2 text-sm border-2 border-white flex items-center space-x-3"
-                        >
-                          <span>Open Invitaition</span>
-                          <EnvelopeOpenIcon className="h-4 w-4" />
-                        </button>
+                        <div className="mx-auto">
+                          <button
+                            onClick={() => {
+                              setOpen(false);
+                              togglePlay();
+                            }}
+                            className="rounded-full px-4 py-2 text-sm border-2 border-white flex items-center space-x-3"
+                          >
+                            <span>Open Invitaition</span>
+                            <EnvelopeOpenIcon className="h-4 w-4" />
+                          </button>
+                        </div>
                       </div>
                     </div>
 
