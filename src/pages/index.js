@@ -13,6 +13,7 @@ import FlowerLeft from '~icons/FlowerLeft';
 import FlowerRight from '~icons/FlowerRight';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import VideoSection from '~components/VideoSection';
+import Music from '~components/Music';
 
 export default function Home() {
   return (
@@ -61,6 +62,8 @@ export default function Home() {
       <LazyLoadComponent>
         <Thanks />
       </LazyLoadComponent>
+
+      {/* <Music /> */}
     </div>
   );
 }

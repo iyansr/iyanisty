@@ -16,7 +16,7 @@ const useInterval = (expired) => {
 
     const makeInterval = setInterval(() => {
       let tzoffset = new Date().getTimezoneOffset() * 60000; //offset in milliseconds
-      let localISOTime = new Date(Date.now() - tzoffset).toISOString().slice(0, -1);
+      let localISOTime = new Date(Date.now()).toISOString().slice(0, -1);
       let now = Date.parse(localISOTime);
       let currentExpired = new Date(expired);
       let diff = currentExpired - now;

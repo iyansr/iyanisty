@@ -6,6 +6,7 @@ import Image from 'next/future/image';
 import Text from './Text';
 import { EnvelopeOpenIcon } from '@heroicons/react/24/solid';
 import { useRouter } from 'next/router';
+import { useAppcontext } from '~context/AppContext';
 
 const OVERLAY_STYLES = {
   position: 'fixed',
@@ -34,8 +35,7 @@ export default function Welcome({}) {
   const [isBrowser, setIsBrowser] = useState(false);
   const [open, setOpen] = useState(true);
   const router = useRouter();
-
-  console.log(router.query);
+  const { togglePlay } = useAppcontext();
 
   useEffect(() => {
     setIsBrowser(true);
@@ -118,7 +118,10 @@ export default function Welcome({}) {
                         </div>
 
                         <button
-                          onClick={() => setOpen(false)}
+                          onClick={() => {
+                            setOpen(false);
+                            togglePlay();
+                          }}
                           className="rounded-full px-4 py-2 text-sm border-2 border-white flex items-center space-x-3"
                         >
                           <span>Open Invitaition</span>
