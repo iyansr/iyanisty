@@ -47,7 +47,7 @@ const Section5 = () => {
           onClick={() => {
             window?.open(mapSrcRedirect, '_blank');
           }}
-          className="bg-[#b692ca] text-sm rounded-full px-4 py-2 text-white mx-auto mt-4 hover:scale-95 animate-pulse duration-100"
+          className="bg-[#b692ca] text-sm rounded-full px-4 py-2 text-white mx-auto mt-4 hover:scale-95  "
         >
           Arahkan Maps
         </button>
@@ -84,7 +84,7 @@ const Section5 = () => {
           onClick={() => {
             window?.open(calendarSrc, '_blank');
           }}
-          className="bg-[#b692ca] rounded-full text-sm px-4 py-2 text-white mx-auto mt-4 hover:scale-95 animate-pulse duration-100"
+          className="bg-[#b692ca] rounded-full text-sm px-4 py-2 text-white mx-auto mt-4 hover:scale-95  "
         >
           Tambah ke Kalender
         </button>

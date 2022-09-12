@@ -9,16 +9,17 @@ const useInterval = (expired) => {
     isTimeOut: false,
   });
 
+  const t = expired.split(/[- :]/);
+
   useEffect(() => {
     const pad = (num) => {
-      return num > 9 ? num : '0' + num;
+      return num > 9 ? String(num) : `0${num}`;
     };
 
     const makeInterval = setInterval(() => {
-      let tzoffset = new Date().getTimezoneOffset() * 60000; //offset in milliseconds
-      let localISOTime = new Date(Date.now()).toISOString().slice(0, -1);
-      let now = Date.parse(localISOTime);
-      let currentExpired = new Date(expired);
+      let now = new Date().getTime();
+
+      let currentExpired = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]).getTime();
       let diff = currentExpired - now;
       let days = Math.floor(diff / (1000 * 60 * 60 * 24));
       let hours = Math.floor(diff / (1000 * 60 * 60));

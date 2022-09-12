@@ -33,7 +33,7 @@ const Section7 = () => {
                   await navigator?.clipboard.writeText('1620004178608');
                   alert('Success Copy');
                 }}
-                className="bg-purple-600 rounded-full text-xs px-4 py-2 text-white mx-auto mt-4 hover:scale-95 animate-pulse duration-100"
+                className="bg-purple-600 rounded-full text-xs px-4 py-2 text-white mx-auto mt-4 hover:scale-95  "
               >
                 Copy Rekening
               </button>
@@ -64,7 +64,7 @@ const Section7 = () => {
                   await navigator?.clipboard.writeText('+6285214098881');
                   alert('Success Copy');
                 }}
-                className="bg-purple-600 rounded-full text-xs px-4 py-2 text-white mx-auto mt-4 hover:scale-95 animate-pulse duration-100"
+                className="bg-purple-600 rounded-full text-xs px-4 py-2 text-white mx-auto mt-4 hover:scale-95  "
               >
                 Copy E-Wallet
               </button>
