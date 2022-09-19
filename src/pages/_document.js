@@ -6,6 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         <script id="sakura-script" src="/script/sakura.js" defer />
+        <title>Wedding of Iyan {'&'} Isty 💜</title>
         <Script
           id="sakura-start"
           strategy="lazyOnload"
