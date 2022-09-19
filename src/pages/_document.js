@@ -22,6 +22,22 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
         />
+
+        <title>Wedding of Iyan & Isty 💜</title>
+        <meta name="title" content="Wedding of Iyan & Isty 💜" />
+        <meta name="description" content="We are getting married 💜" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Wedding of Iyan & Isty 💜" />
+        <meta property="og:description" content="We are getting married 💜" />
+        <meta property="og:image" content="https://ik.imagekit.io/iyansr/3_OjEKW-9Zs.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Wedding of Iyan & Isty 💜" />
+        <meta property="twitter:description" content="We are getting married 💜" />
+        <meta property="twitter:image" content="https://ik.imagekit.io/iyansr/3_OjEKW-9Zs.jpg" />
       </Head>
       <body>
         <Main />
